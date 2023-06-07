@@ -1,0 +1,32 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+
+    .accordian {
+        width: 600px;
+
+        .clicker {
+            border: 1px solid blue;
+            padding: 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;            
+        }
+
+        .def {
+            overflow: hidden;
+            background: rgb(48, 48, 48);
+            color: white;
+            display: none;
+        }
+        .toggle {
+            display: block;
+        }
+        .none{
+            display: none;
+        }
+    }
+}
