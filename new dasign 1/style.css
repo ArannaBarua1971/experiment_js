@@ -1,0 +1,28 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.main{
+    height: 100vh;
+    width: 100%;
+}
+.videoSection{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.animate1{
+    transition: 0.5s linear;    
+}
+.animate2{
+    transition: 0.7s linear;    
+}
