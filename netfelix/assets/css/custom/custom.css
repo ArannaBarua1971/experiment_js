@@ -1,0 +1,48 @@
+/*Bootstrap common css */
+h1,h2,h3,h4,h5,h6,
+small,span,
+ul,ol,
+p{
+margin:0;
+padding:0;
+}
+ul,ol{
+list-style-type:none;
+}
+a,a:hover{
+text-decoration:none;
+text-transform:none;
+}
+*{
+    font-family: sans-serif;
+}
+img{max-width: 100%;}
+/*Bootstrap common css */
+
+/* hero section css start */
+#hero .hero_thumb::before{
+    content: '';
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 15%, rgba(255,255,255,0.3) 53%, rgba(0,0,0,0.8) 95%);
+    inset: 0;
+}
+.email_input .emailInput:focus ~ span{
+    padding-top: 3px;
+    font-size: 12px;
+    color: rgb(160, 155, 155);
+}
+/* hero section css end */
+
+/* footer section css end */
+#footer ul li{
+    margin: 5px 0px;
+}
+#footer a{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+}
+#footer p{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* fooer section css end */

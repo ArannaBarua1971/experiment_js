@@ -8,6 +8,7 @@ const musicCT=document.getElementById('mct');
 const musicd=document.getElementById('md');
 const track=document.getElementById('track');
 const progressbar=document.querySelector('.progressbar');
+const download=document.getElementById('download');
 
 let path="media/music/";
 
@@ -24,6 +25,24 @@ const musicData=[
     },
     {
         audio:`${path}music4.mp3`
+    },
+    {
+        audio:`${path}music5.mp3`
+    },
+    {
+        audio:`${path}music6.mp3`
+    },
+    {
+        audio:`${path}music7.mp3`
+    },
+    {
+        audio:`${path}music8.mp3`
+    },
+    {
+        audio:`${path}music9.mp3`
+    },
+    {
+        audio:`${path}music10.mp3`
     },
 ]
 
@@ -49,6 +68,7 @@ let loop=0;
 const next=()=>{
     loop=(loop+1)%musicData.length;
     music.src=musicData[loop].audio;
+    download.href=musicData[loop].audio;
     
     if(onMusic){
         onMusic=false;
@@ -63,7 +83,8 @@ const next=()=>{
 const prev=()=>{
     loop=(loop-1+musicData.length)%musicData.length;
     music.src=musicData[loop].audio;
-    
+    download.href=musicData[loop].audio;
+
     if(onMusic){
         onMusic=false;
         play_Music_pause();
@@ -91,6 +112,8 @@ const timeMaintain=function(e){
 
     let progress =Math.floor((musicCurrentTime/musicDuration)*100);
     track.style.width=`${progress}%`
+
+    console.log(e);
     
 }
 
